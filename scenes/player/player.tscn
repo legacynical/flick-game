@@ -7,6 +7,7 @@
 radius = 32.0624
 
 [node name="Player" type="CharacterBody2D"]
+motion_mode = 1
 script = ExtResource("1_2vgeg")
 
 [node name="PlayerImage" type="Sprite2D" parent="."]
