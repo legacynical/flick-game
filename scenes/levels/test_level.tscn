@@ -9,36 +9,50 @@
 [node name="Walls" type="Node2D" parent="."]
 
 [node name="WallLong" parent="Walls" instance=ExtResource("1_c2ys3")]
-position = Vector2(8, 803)
+position = Vector2(8, 787)
 rotation = 1.5708
 
 [node name="WallLong2" parent="Walls" instance=ExtResource("1_c2ys3")]
-position = Vector2(8, 485)
+position = Vector2(8, 469)
 rotation = 1.5708
 
 [node name="WallLong3" parent="Walls" instance=ExtResource("1_c2ys3")]
-position = Vector2(9, 168)
+position = Vector2(9, 152)
 rotation = 1.5708
 
 [node name="WallLong4" parent="Walls" instance=ExtResource("1_c2ys3")]
-position = Vector2(632, 803)
+position = Vector2(632, 787)
 rotation = 1.5708
 
 [node name="WallLong5" parent="Walls" instance=ExtResource("1_c2ys3")]
-position = Vector2(632, 485)
+position = Vector2(632, 469)
 rotation = 1.5708
 
 [node name="WallLong6" parent="Walls" instance=ExtResource("1_c2ys3")]
-position = Vector2(633, 168)
+position = Vector2(633, 152)
 rotation = 1.5708
 
-[node name="WallShort" parent="." instance=ExtResource("2_wfhsx")]
-position = Vector2(282, 498)
-rotation = 0.369492
+[node name="WallLong7" parent="Walls" instance=ExtResource("1_c2ys3")]
+position = Vector2(160, 952)
+rotation = 3.14159
 
-[node name="WallShort2" parent="." instance=ExtResource("2_wfhsx")]
+[node name="WallLong8" parent="Walls" instance=ExtResource("1_c2ys3")]
+position = Vector2(480, 952)
+rotation = 3.14159
+
+[node name="Obstacles" type="Node2D" parent="."]
+
+[node name="WallShort" parent="Obstacles" instance=ExtResource("2_wfhsx")]
+position = Vector2(360, 448)
+rotation = 1.0444
+
+[node name="WallShort2" parent="Obstacles" instance=ExtResource("2_wfhsx")]
 position = Vector2(178, 208)
 rotation = -0.277088
 
+[node name="WallShort3" parent="Obstacles" instance=ExtResource("2_wfhsx")]
+position = Vector2(488, 216)
+rotation = 1.0265
+
 [node name="Player" parent="." instance=ExtResource("3_qtf05")]
-position = Vector2(200, 819)
+position = Vector2(320, 832)
