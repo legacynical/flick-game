@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://crw470l50hfnx"]
+
+[ext_resource type="Texture2D" uid="uid://bpefrxigwcvxu" path="res://graphics/ballBlue_10.png" id="1_2wwvu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lapc2"]
+radius = 37.054
+
+[node name="TestEnemy" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_2wwvu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_lapc2")
