@@ -1,26 +1,44 @@
-[gd_scene load_steps=3 format=3 uid="uid://o0w2cdhdjqq8"]
+[gd_scene load_steps=4 format=3 uid="uid://o0w2cdhdjqq8"]
 
 [ext_resource type="PackedScene" uid="uid://jgd3tfvg00yu" path="res://scenes/objects/wall_long.tscn" id="1_c2ys3"]
 [ext_resource type="PackedScene" uid="uid://c68cbjmvqcm45" path="res://scenes/objects/wall_short.tscn" id="2_wfhsx"]
+[ext_resource type="PackedScene" uid="uid://b557iy0oclo0" path="res://scenes/player/player.tscn" id="3_qtf05"]
 
 [node name="TestLevel" type="Node2D"]
 
-[node name="WallLong" parent="." instance=ExtResource("1_c2ys3")]
-position = Vector2(16, 385)
-rotation = -1.40919
+[node name="Walls" type="Node2D" parent="."]
 
-[node name="WallLong2" parent="." instance=ExtResource("1_c2ys3")]
-position = Vector2(348, 423)
-rotation = -1.63639
+[node name="WallLong" parent="Walls" instance=ExtResource("1_c2ys3")]
+position = Vector2(8, 803)
+rotation = 1.5708
 
-[node name="WallLong3" parent="." instance=ExtResource("1_c2ys3")]
-position = Vector2(157, 15)
-rotation = -0.0125036
+[node name="WallLong2" parent="Walls" instance=ExtResource("1_c2ys3")]
+position = Vector2(8, 485)
+rotation = 1.5708
+
+[node name="WallLong3" parent="Walls" instance=ExtResource("1_c2ys3")]
+position = Vector2(9, 168)
+rotation = 1.5708
+
+[node name="WallLong4" parent="Walls" instance=ExtResource("1_c2ys3")]
+position = Vector2(632, 803)
+rotation = 1.5708
+
+[node name="WallLong5" parent="Walls" instance=ExtResource("1_c2ys3")]
+position = Vector2(632, 485)
+rotation = 1.5708
+
+[node name="WallLong6" parent="Walls" instance=ExtResource("1_c2ys3")]
+position = Vector2(633, 168)
+rotation = 1.5708
 
 [node name="WallShort" parent="." instance=ExtResource("2_wfhsx")]
-position = Vector2(225, 430)
+position = Vector2(282, 498)
 rotation = 0.369492
 
 [node name="WallShort2" parent="." instance=ExtResource("2_wfhsx")]
-position = Vector2(121, 140)
+position = Vector2(178, 208)
 rotation = -0.277088
+
+[node name="Player" parent="." instance=ExtResource("3_qtf05")]
+position = Vector2(200, 819)
