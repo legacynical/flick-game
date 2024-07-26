@@ -35,7 +35,7 @@ func _process(delta):
 		print("I collided with ", collision1.get_collider().name)
 
 	# Using move_and_slide.
-	move_and_slide()
-	for i in get_slide_collision_count():
-		var collision2 = get_slide_collision(i)
-		print("I collided with ", collision2.get_collider().name, " ", i)
+	#move_and_slide()
+	#for i in get_slide_collision_count():
+		#var collision2 = get_slide_collision(i)
+		#print("I collided with ", collision2.get_collider().name)

@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://jgd3tfvg00yu" path="res://scenes/objects/wall_long.tscn" id="1_c2ys3"]
 [ext_resource type="PackedScene" uid="uid://c68cbjmvqcm45" path="res://scenes/objects/wall_short.tscn" id="2_wfhsx"]
-[ext_resource type="PackedScene" uid="uid://b557iy0oclo0" path="res://scenes/player/player.tscn" id="3_qtf05"]
+[ext_resource type="PackedScene" uid="uid://b7m2ihn2da1gw" path="res://scenes/player/player_v_2.tscn" id="4_1y3c0"]
 [ext_resource type="PackedScene" uid="uid://crw470l50hfnx" path="res://scenes/enemies/test_enemy.tscn" id="4_hgs4h"]
 
 [node name="TestLevel" type="Node2D"]
@@ -55,8 +55,8 @@ rotation = -0.277088
 position = Vector2(488, 216)
 rotation = 1.0265
 
-[node name="Player" parent="." instance=ExtResource("3_qtf05")]
-position = Vector2(320, 832)
+[node name="PlayerV2" parent="." instance=ExtResource("4_1y3c0")]
+position = Vector2(328, 808)
 
 [node name="Node2D" type="Node2D" parent="."]
 
