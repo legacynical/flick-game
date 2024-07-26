@@ -41,6 +41,14 @@ rotation = 3.14159
 position = Vector2(480, 952)
 rotation = 3.14159
 
+[node name="WallLong9" parent="Walls" instance=ExtResource("1_c2ys3")]
+position = Vector2(160, -16)
+rotation = 3.14159
+
+[node name="WallLong10" parent="Walls" instance=ExtResource("1_c2ys3")]
+position = Vector2(480, -16)
+rotation = 3.14159
+
 [node name="Obstacles" type="Node2D" parent="."]
 
 [node name="WallShort" parent="Obstacles" instance=ExtResource("2_wfhsx")]
